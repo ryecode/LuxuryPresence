@@ -1,0 +1,247 @@
+/* GENERAL */
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+    background-color: aliceblue;
+    font-family: 'Karla', serif;
+    margin: 0;
+    padding: 0;
+    place-content: center;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* NAVIGATION */
+
+.navbar
+{
+    background-color: transparent;
+    color: white;
+    padding-top: 1em; 
+    padding-left: 2em;
+    transition: all 0.5s;
+}
+
+.nav-link
+{
+    color: white;
+    font-weight: bolder; 
+    text-shadow: 0 0 0.1em darkgray;
+}
+
+#active
+{
+    color: blanchedalmond;
+}
+.nav-link:hover
+{
+    color: lightcyan;
+}
+
+.navbar-scrolled
+{
+    background-color: darkgray;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* HERO IMAGE */
+.hero
+{
+    background-image: url("https://images.unsplash.com/photo-1565182999561-18d7dc61c393?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjQxNDUyfQ&w=1920");
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    margin-top: -7em;
+    z-index: 1;
+}
+
+.title
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    caret-color: transparent;
+    font-family: 'Playfair Display', serif;
+    font-size: 5em;
+    color: white; 
+    text-shadow: 0 0 0.1em gray;
+}
+
+.backdrop
+{
+    margin: 0;
+    width: 100vw;
+    height: 700px;
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: rgba(2, 72, 12, 0.1);
+    -webkit-backdrop-filter: opacity(10px);
+    backdrop-filter: opacity(10px);
+}
+
+/* CONTENT */
+
+.content_title
+{
+    margin: 3em 0em 1.5em 0em;
+    font-family: 'Playfair Display', serif;
+    caret-color: transparent;
+}
+
+.card
+{
+    margin: 1em;
+    caret-color: transparent;
+    padding-top: -0.5em;
+}
+
+.box {
+
+    float: left;
+    width: 45%;
+    padding: 5px;
+    background-color: black;
+    height: 400px;
+}
+.box h1
+{
+    color: aliceblue;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.altbox {
+
+    float: left;
+    width: 45%;
+    padding: 5px;
+    background-color: aliceblue;
+    height: 400px;
+    color: black;
+}
+.altbox h1
+{
+
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.altbox li
+{
+    text-align: left;
+    margin-left: 10em;
+    margin-top: 1em;
+}
+
+/* PROCESS */
+.process
+{
+    background-image: url("https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gihsg13plfsb8xfbzmlf/image-027");
+    background-size: cover;
+    height: 700px;
+    width: 100vw;
+    z-index: 1;
+    margin-left: 0;
+    padding: 0px;
+}
+
+.process1
+{
+    border-top: 2em solid;
+    border-color: black;
+    background-image: url("https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/nhcjbdzbycjvfcks0nqe/image-004");
+    background-size: cover;
+    height: 700px;
+    width: 100vw;
+    z-index: 1;
+    margin-left: 0;
+    padding: 0px;
+}
+
+.backdrop1
+{
+    margin: 0;
+    width: 100vw;
+    height: 700px;
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.409);
+    -webkit-backdrop-filter: opacity(10px);
+    backdrop-filter: opacity(10px);
+}
+
+.title1
+{
+    position: absolute;
+    top: 39em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    caret-color: transparent;
+    font-family: 'Playfair Display', serif;
+    font-size: 5em;
+    color: white; 
+    text-shadow: 0 0 0.1em gray;
+    caret-color: transparent;
+
+}
+
+.sell
+{
+    color: white;
+    font-size: xx-large;
+    text-align: left;
+    margin-left: 3em;
+    margin-bottom: 2em;
+    caret-color: transparent;
+}
+
+.title2
+{
+    position: absolute;
+    top: 48em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    caret-color: transparent;
+    font-family: 'Playfair Display', serif;
+    font-size: 5em;
+    color: white; 
+    text-shadow: 0 0 0.1em gray;
+}
+
+.buy
+{
+    color: white;
+    font-size: xx-large;
+    text-align: left;
+    margin-left: 1em;
+    margin-bottom: 2em;
+    caret-color: transparent;
+}
