@@ -408,8 +408,9 @@ body
 }
 
 /* ANIMATIONS */
-p, li, h5, h2, h1 
+p, li, h5, h2, h1, h3, h4 
 {
+    font-family:  'Playfair Display', serif;
     animation: fade linear both;
     animation-timeline: view();
     animation-range: entry 15% cover 30%;
