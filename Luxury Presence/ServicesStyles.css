@@ -15,6 +15,7 @@ body
     height: 100%;
     text-align: center;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /* NAVIGATION */
@@ -41,7 +42,7 @@ body
 }
 .nav-link:hover
 {
-    color: lightcyan;
+    color: hsl(203, 98%, 50%);
 }
 
 .navbar-scrolled
@@ -73,6 +74,7 @@ body
     font-size: 5em;
     color: white; 
     text-shadow: 0 0 0.1em gray;
+
 }
 
 .backdrop
@@ -115,6 +117,7 @@ body
     padding: 5px;
     background-color: black;
     height: 400px;
+    caret-color: transparent;
 }
 .box h1
 {
@@ -125,6 +128,7 @@ body
     align-items: center;
     text-align: center;
     margin-top: 20%;
+    caret-color: transparent;
 }
 
 .altbox {
@@ -135,6 +139,7 @@ body
     background-color: aliceblue;
     height: 400px;
     color: black;
+    caret-color: transparent;
 }
 .altbox h1
 {
@@ -145,6 +150,7 @@ body
     align-items: center;
     text-align: center;
     margin-top: 10%;
+    caret-color: transparent;
 }
 
 .altbox li
@@ -152,6 +158,7 @@ body
     text-align: left;
     margin-left: 10em;
     margin-top: 1em;
+    caret-color: transparent;
 }
 
 /* PROCESS */
@@ -164,6 +171,7 @@ body
     z-index: 1;
     margin-left: 0;
     padding: 0px;
+    caret-color: transparent;
 }
 
 .process1
@@ -177,6 +185,7 @@ body
     z-index: 1;
     margin-left: 0;
     padding: 0px;
+    caret-color: transparent;
 }
 
 .backdrop1
@@ -194,6 +203,7 @@ body
     background-color: rgba(0, 0, 0, 0.409);
     -webkit-backdrop-filter: opacity(10px);
     backdrop-filter: opacity(10px);
+    caret-color: transparent;
 }
 
 .title1
@@ -209,6 +219,7 @@ body
     color: white; 
     text-shadow: 0 0 0.1em gray;
     caret-color: transparent;
+    caret-color: transparent;
 
 }
 
@@ -219,6 +230,7 @@ body
     text-align: left;
     margin-left: 3em;
     margin-bottom: 2em;
+    caret-color: transparent;
     caret-color: transparent;
 }
 
@@ -234,6 +246,7 @@ body
     font-size: 5em;
     color: white; 
     text-shadow: 0 0 0.1em gray;
+    caret-color: transparent;
 }
 
 .buy
@@ -244,4 +257,173 @@ body
     margin-left: 1em;
     margin-bottom: 2em;
     caret-color: transparent;
+    caret-color: transparent;
+}
+
+.poster
+{
+    position: absolute;
+    height: 700px;
+    width: 100vw;
+    z-index: 1;
+    margin-left: 0;
+    padding: 0px;
+    caret-color: transparent;
+}
+
+.textbox {
+
+    position: absolute;
+    top: 400em;
+    margin-left: 10em;
+    width: 75%;
+    padding-top: 0px;
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    caret-color: transparent;
+}
+.textbox h1
+{
+    color: black;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    caret-color: transparent;
+}
+
+/* BOTTOM HERO IMAGE */
+.botHero
+{
+    background-image: url("https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/skkve0aqzhkkyiytn92d/work-with-us");
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    top: 580em;
+    z-index: 1;
+}
+
+.botTitle
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    caret-color: transparent;
+    font-family: 'Playfair Display', serif;
+    font-size: 5em;
+    color: white; 
+    text-shadow: 0 0 0.1em gray;
+    border-bottom: 1px solid white;
+}
+
+.botBackdrop
+{
+    margin: 0;
+    width: 100vw;
+    height: 700px;
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.398);
+    -webkit-backdrop-filter: opacity(10px);
+    backdrop-filter: opacity(10px);
+}
+
+
+.neon-button,
+.neon-button::before,
+.neon-button::after {
+  box-sizing: border-box;
+}
+
+.neon-button {
+  margin-top: 2em;  
+  background-color: transparent;
+  font-size: 1rem;
+  font-family: 'Playfair Display', serif;
+  color: hsl(180, 33%, 98%);
+  cursor: pointer;
+  text-decoration: none;
+  border: hsl(180, 33%, 98%) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  position: relative;
+  font-weight: 900;
+  box-shadow:
+    inset 0 0 0.5em 0 hsl(180, 33%, 98%),
+    0 0 0.5em 0 hsl(180, 33%, 98%);
+}
+
+.neon-button::before {
+  pointer-events: none;
+  /*use this string to avoid pointer change outside button */
+  content: '';
+  position: absolute;
+  background: hsl(180, 33%, 98%);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+
+.neon-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em hsl(180, 33%, 98%);
+  opacity: 0;
+  transition: opacity 100ms linear;
+  background-color: hsl(180, 33%, 98%);
+  z-index: -1;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+  color: hsl(203, 98%, 50%);
+}
+
+.neon-button:hover::before,
+.neon-button:focus::before {
+  opacity: 1;
+}
+
+.neon-button:hover::after,
+.neon-button:focus::after {
+  opacity: 1;
+}
+
+/* ANIMATIONS */
+p, li, h5, h2, h1 
+{
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 15% cover 30%;
+}
+
+
+@keyframes fade 
+{
+    from
+    {
+        opacity: 0;
+    }
+    to 
+    {
+     opacity: 1;   
+    }
 }
